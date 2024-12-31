@@ -3,7 +3,7 @@ class HashTable {
         this.table = new Array(size)
         this.size = size
     }
-//Hash funciton to hash key
+    //Hash funciton to hash key
     hash(key) {
         let total = 0
         for (let i = 0; i < key.length; i++) {
@@ -34,29 +34,29 @@ class HashTable {
         const index = this.hash(key)
         // return this.table[index]
         const bucket = this.table[index]
-        if(bucket){
-            const sameKeyItem=bucket.find(item => item[0 ] === key)
-            if(sameKeyItem){
+        if (bucket) {
+            const sameKeyItem = bucket.find(item => item[0] === key)
+            if (sameKeyItem) {
                 return sameKeyItem
             }
         }
         return undefined
     }
 
-//Delete a key value pair
+    //Delete a key value pair
     remove(key) {
         const index = this.hash(key)
         // this.table[index] = undefined
         const bucket = this.table[index]
-        if(bucket){
-            const sameKeyItem=bucket.find(item => item[0] === key)
-            if(sameKeyItem){
-                bucket.splice(bucket.indexOf(sameKeyItem),1)
+        if (bucket) {
+            const sameKeyItem = bucket.find(item => item[0] === key)
+            if (sameKeyItem) {
+                bucket.splice(bucket.indexOf(sameKeyItem), 1)
             }
         }
     }
 
-//To print the hashtable
+    //To print the hashtable
     display() {
         for (let i = 0; i < this.table.length; i++) {
             if (this.table[i]) {
