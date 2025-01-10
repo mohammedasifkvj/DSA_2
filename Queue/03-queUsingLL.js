@@ -47,6 +47,7 @@ class Queue {
 
     print(){
         if(this.isEmpty()){
+            console.log("Queue is empty");
             return null
         }
         let curr = this.head

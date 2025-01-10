@@ -1,6 +1,7 @@
 // // Circular queue is an extended version of regular queue
 // Also referred as circulaer buffer or ring buffer and follow FIFO principle
-// The size of the que is fixed,and single block of memory is used as if the first element is connected to the last element
+// The size of the que is fixed,
+// and single block of memory is used as if the first element is connected to the last element
 // Circular queue will reuse the empty block created during dequeue operation
 // when working with queue of maximum size, a circular is a great implementation choice
 // Usage

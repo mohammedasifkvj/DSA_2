@@ -75,8 +75,10 @@ table.display()
 
 console.log(table.get('name'));
 
-table.set("mane", "Clark")  // this is a bug , becuse if the key contain the same set of charecter, (eg: name & mane),the hash function generate the same index ,  that will over write ( This is called Collision)
-// To avoid collision there have somny methods,
+table.set("mane", "Clark")  // this is a bug , becuse if the key contain the same set of charecter,
+                           // (eg: name & mane),the hash function generate the same index,
+                           //   that will over write ( This is called Collision)
+// To avoid collision there have so any methods,
 // one method is instead of saving a value , save as an Array
 table.display()
 
